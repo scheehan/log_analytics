@@ -1,0 +1,32 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Data Analytic Site</title>
+  <meta name="description" content="Basic Data Analytics">
+  <meta name="author" content="vasikadedomena">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<h1>Log File Upload</h1>
+
+<p>Please upload log file for data analysis</p>
+
+
+<div class="div_1">  
+  <form action="cgi/upload.py" method="post" enctype="multipart/form-data">
+	<input class="upload" type="file" name="filename" />
+	<input class="submit" type="submit" />
+  </form>
+</div>
+
+
+</body>
+
+</html>
