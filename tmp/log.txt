@@ -1,0 +1,11 @@
+Nov 1 2019 23:56:27, INFO, "kernel:Initializing cgroup subsys cpuset"
+Nov 1 2019 23:56:28, INFO, "kernel:Initializing cgroup subsys cpu"
+Nov 1 2019 23:56:29, WARN, "kernel:Initializing cgroup subsys cpuacct"
+Nov 1 2019 23:33:57, INFO, kernel:initializing cgroup subsys cpuset
+Nov 1 2019 23:34:57, INFO, kernel:initializing cgroup subsys cpuset
+Nov 1 2019 22:35:57, INFO, kernel:initializing cgroup subsys cpuset
+Nov 1 2019 22:36:57, WARN, kernel:initializing cgroup subsys cpuset
+Nov 1 2019 22:37:57, INFO, kernel:initializing cgroup subsys cpuset
+Nov 1 2019 22:38:57, ERR, kernel:initializing cgroup subsys cpuset
+Nov 1 2019 22:39:57, INFO, kernel:initializing cgroup subsys cpuset
+Nov 1 2019 22:40:57, INFO, kernel:initializing cgroup subsys cpuset

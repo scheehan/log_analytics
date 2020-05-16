@@ -6,6 +6,12 @@ import os
 from pathlib import Path
 import subprocess
 import re
+import matplotlib
+
+matplotlib.use('Agg')
+
+import matplotlib.pyplot as plt
+
 
 filepath = '/var/www/wou/tmp/'
 
@@ -16,19 +22,32 @@ with open("/var/www/wou/data/filelist.txt", "r") as file:
 
 lastfilename = last_line
 
-cmd_output = subprocess.Popen(['tail', '-n1', '/var/log/apache2/access.log'], stdout=subprocess.PIPE)
-out, err = cmd_output.communicate()
+rc = subprocess.call('/var/www/wou/cgi/get_info.sh')
 
-print(out)
+with open("/var/www/wou/data/client_info.txt", "r") as file:
+   for last_access_line in file:
+      pass
+   file.close()
+
+command_output = os.popen('tail -n1 /var/www/wou/data/client_info.log')
+
+r2 = re.findall(r" [lLwW][iI][nN].{4,11} ", command_output.read())
 
 file_to_open = filepath + lastfilename.rstrip()
 
 f = open(file_to_open, 'r')
-datainfo = f.read()
+datainfo = f.readlines(3)
+
+lines = list(f)
 f.close()
 
 df = pd.read_csv(file_to_open, names=['Time','Severity','Text'], engine='python')
+
 df.to_html('../output.html', justify='center')
+
+df.Severity.value_counts().plot.pie(y='Severities', figsize=(5, 5),autopct='%1.1f%%', startangle=90)
+plt.savefig('../images/chart_output.png')
+
 
 print("Content-Type: text/html\n")
 print("<html>\n")
@@ -43,11 +62,23 @@ print("""\
 </head>
 """)
 print("<body>\n")
+print("<p>You are using a {} system</p>".format(r2))
 print("\n")
+print("<p>Returns of your data filename: {}</p>".format(lastfilename))
+print("""\
+
+<object data="/tmp/{}" type="text/plain" width="500" style="height: 150px"></object>
+
+""".format(lastfilename))
+
 print("""\
 
 <div class="box-1">
 <iframe src="https://www.vasikadedomena.site/output.html" style="border: none; width: 600px; height: 300px;" ></iframe>
+</div>
+
+<div class="image-box-1">
+<img src='../images/chart_output.png'>
 </div>
 
 <div class="box-2">
