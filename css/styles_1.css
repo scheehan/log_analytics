@@ -1,0 +1,23 @@
+.div_1 {
+	position: relative;
+	width: 400px;
+	heigh: 200px;
+}
+
+form {
+	position: absolute;
+	top: 0;
+}
+
+.box-1 {
+	position: static;       
+}
+
+.box-2 {
+	position: relative;
+	left: 10px;
+}
+img {
+	position: relative;
+}
+

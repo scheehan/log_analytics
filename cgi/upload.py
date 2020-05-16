@@ -2,6 +2,7 @@
 
 import cgi, os
 import cgitb; cgitb.enable()
+import webbrowser
 
 form = cgi.FieldStorage()
 
@@ -20,14 +21,27 @@ if fileitem.filename:
    ap_file.close()
 
    message = 'The file "' + fn + '" was uploaded successfully'
-   
+
+elif not (fn == ('.txt') or ('.log') or ('.csv')):
+   message = 'uploaded file type is not supported'
+
 else:
    message = 'No file was uploaded'
+
+with open("/var/log/apache2/access.log", "r") as file:
+   for last_access_line in file:
+      pass
+   file.close()
+
+
    
 print """\
 Content-Type: text/html\n
 <html>
 <body>
+
+
+
    <p>%s</p>
 
    <div>
@@ -36,7 +50,7 @@ Content-Type: text/html\n
  	</form>
   </div>
 
-<button onclick="window.location.href='https://www.vasikadedomena.site';">Back To Main Page</button
+<button onclick="window.location.href='https://www.vasikadedomena.site';">Back To Main Page</button>
 
 </body>
 </html>
