@@ -1,20 +1,24 @@
 .div_1 {
-        position: relative;
+	position: relative;
 	width: 400px;
 	heigh: 200px;
 }
-
 form {
-        position: absolute;
+	position: absolute;
 	top: 0;
 }
-
 .box-1 {
-	position: static;	
+	position: static;
 }
-
 .box-2 {
 	position: relative;
-	top: 1200px;
-	left: 30px;
+	left: 10px;
+	padding: 10px
+}
+.image-box-1 {
+position: absolute;
+top: 250px;
+left: 700px;
+width: 200px;
+height: 100px;
 }
