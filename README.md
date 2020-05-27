@@ -9,7 +9,7 @@ Click image to play walkthrough video
 HowTo user manual
 
 - Browser to main page index.html
-![Image of screenshot](https://github.com/scheehan/log_analytics/blob/master/images/UI_upload.png =500x500)
+![Image of screenshot](https://github.com/scheehan/log_analytics/blob/master/images/UI_upload.png)
 
 - click Browse to open file window to select text or log file
 ![Image of screenshot](https://github.com/scheehan/log_analytics/blob/master/images/browse_file.png)
