@@ -2,4 +2,4 @@
 syslog analytic tool
 
 
-[![Watch the video](https://github.com/scheehan/log_analytics/tmp/win_ui_output.png)](https://youtu.be/WKhBria18cM)
+![Image of screenshot](https://github.com/scheehan/log_analytics/tmp/win_ui_output.png)](https://youtu.be/WKhBria18cM)
