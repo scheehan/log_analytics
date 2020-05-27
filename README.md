@@ -8,7 +8,7 @@ Click image to play walkthrough video
 
 # __HowTo user manual__
 
-__- ##Browser to main page index.html__
+__##- Browser to main page index.html__
 ![Image of screenshot](https://github.com/scheehan/log_analytics/blob/master/images/UI_upload.png)
 
 __- ##click Browse to open file window to select text or log file__
