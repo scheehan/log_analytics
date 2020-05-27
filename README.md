@@ -14,7 +14,7 @@ HowTo user manual
 - click Browse to open file window to select text or log file
 ![Image of screenshot](https://github.com/scheehan/log_analytics/blob/master/images/browse_file.png)
 
-- select interested file and click submit
+- select interested file and click submit to start upload process
 ![Image of screenshot](https://github.com/scheehan/log_analytics/blob/master/images/selected_file_h.png)
 
 - upload success page and click proceed to process data
