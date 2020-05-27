@@ -6,7 +6,7 @@ Click image to play walkthrough video
 
 [![Watch the video](https://github.com/scheehan/log_analytics/blob/master/tmp/win_ui_output.png)](https://youtu.be/WKhBria18cM)
 
-HowTo user manual
+__HowTo user manual__
 
 - Browser to main page index.html
 ![Image of screenshot](https://github.com/scheehan/log_analytics/blob/master/images/UI_upload.png)
